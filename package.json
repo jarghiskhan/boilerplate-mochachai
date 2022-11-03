@@ -2,6 +2,9 @@
   "name": "automated-testing-app",
   "version": "0.0.1",
   "description": "Boilerplate for the Quality Assurance and Testing with Chai challenges",
+  "engines": {
+    "node":"18.x.0"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
