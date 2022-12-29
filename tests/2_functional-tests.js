@@ -6,6 +6,8 @@ const server = require('../server');
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
+const testSite = 'https://mocha-learning.onrender.com'
+
 suite('Functional Tests', function () {
   this.timeout(5000);
   suite('Integration tests with chai-http', function () {
@@ -67,11 +69,15 @@ suite('Functional Tests', function () {
 });
 
 const Browser = require('zombie');
+Browser.site = testSite;
 
 suite('Functional Tests with Zombie.js', function () {
   this.timeout(5000);
+  const browser = new Browser();
 
-
+  suiteSetup(function(done){
+   return browser.visit('/',done)
+  });
 
   suite('Headless browser', function () {
     test('should have a working "site" property', function() {
