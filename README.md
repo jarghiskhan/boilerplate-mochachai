@@ -2,4 +2,4 @@
 
 This is the boilerplate for the Quality Assurance with Chai lessons. Instructions for completing these lessons start at https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-and-testing-with-chai/
 
-Post https://boilerplate-chai.herokuapp.com/ in solution link.
+Post https://mocha-learning.onrender.com in solution link.
